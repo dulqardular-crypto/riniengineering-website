@@ -70,9 +70,68 @@ body {
     background-size: 64px 64px;
 }
 
-/* Logo (white-bg removed offline; no blend filter needed) */
+/* Logo (white-bg removed offline) — sharp + glossy */
 .logo-blend {
-    /* Kept as a no-op class for backwards compatibility */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    filter:
+        contrast(1.12)
+        saturate(1.18)
+        drop-shadow(0 2px 0 rgba(0, 0, 0, 0.35))
+        drop-shadow(0 8px 28px rgba(0, 71, 255, 0.18));
+}
+
+.logo-glow {
+    position: relative;
+    isolation: isolate;
+}
+.logo-glow .logo-sheen,
+.logo-glow .logo-highlight {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+}
+.logo-glow .logo-sheen {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.55) 0%,
+        rgba(255, 255, 255, 0.18) 22%,
+        rgba(255, 255, 255, 0) 42%,
+        rgba(255, 255, 255, 0) 58%,
+        rgba(255, 255, 255, 0.08) 78%,
+        rgba(255, 255, 255, 0.32) 100%
+    );
+    mix-blend-mode: overlay;
+    opacity: 0.85;
+    z-index: 2;
+}
+.logo-glow .logo-highlight {
+    background: radial-gradient(
+        ellipse at 30% 25%,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0) 55%
+    );
+    mix-blend-mode: screen;
+    opacity: 0.7;
+    z-index: 3;
+    animation: shine-drift 6s ease-in-out infinite alternate;
+}
+
+@keyframes shine-drift {
+    0% {
+        transform: translate(-2%, -2%);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(3%, 3%);
+        opacity: 0.85;
+    }
 }
 
 /* Selection */

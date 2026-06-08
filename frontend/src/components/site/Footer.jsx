@@ -12,7 +12,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-5">
           <div className="flex items-center gap-4 mb-6">
-              <div className="h-20 w-20 flex items-center justify-center">
+              <div className="logo-glow h-20 w-20 flex items-center justify-center">
                 <img
                   src={BRAND.logo}
                   alt="Rini Engineering Works"
