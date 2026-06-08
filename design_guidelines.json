@@ -1,0 +1,117 @@
+{
+  "theme": "dark",
+  "archetype": "Archetype 4 (Swiss & High-Contrast)",
+  "brand_name": "Rini Engineering Works",
+  "design_philosophy": "Industrial, robust, precise. Utilizing dark structural grayscale backgrounds (#0A0B0E, #14161A) to emulate a sleek, high-end technical feel, punctuated by electric blue (#0047FF) for high-visibility CTAs. The layout should expose its skeleton using 1px borders (The Technical Look) to reflect engineering precision.",
+  "colors": {
+    "background": {
+      "primary": "#0A0B0E",
+      "secondary": "#14161A",
+      "tertiary": "#1D2128"
+    },
+    "text": {
+      "primary": "#F8FAFC",
+      "secondary": "#94A3B8",
+      "overline": "#64748B"
+    },
+    "brand": {
+      "accent": "#0047FF",
+      "accent_hover": "#0036CC",
+      "metallic_silver": "#C0C5CE",
+      "border": "rgba(255, 255, 255, 0.1)"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "'Bricolage Grotesque', sans-serif",
+      "body": "'Manrope', sans-serif"
+    },
+    "rules": {
+      "h1": "text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-none text-white",
+      "h2": "text-3xl md:text-5xl font-semibold tracking-tight text-white",
+      "h3": "text-xl md:text-2xl font-medium tracking-tight text-white",
+      "overline": "text-xs font-bold uppercase tracking-[0.2em] text-slate-400",
+      "body": "text-base md:text-lg text-slate-400 leading-relaxed"
+    }
+  },
+  "layout_and_spacing": {
+    "section_padding": "py-24 md:py-32",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "border_radius": "rounded-none or rounded-sm. Max rounded-md. Keep the aesthetic sharp and engineered.",
+    "grid_style": "Use technical grid borders (border-collapse, border-white/10) to organize information mechanically."
+  },
+  "media": {
+    "logo": "https://customer-assets.emergentagent.com/job_precision-metals-5/artifacts/k2rb8pm1_image%20logo%20rini.PNG",
+    "hero_office": "https://images.unsplash.com/photo-1618211535056-e678b388af32?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwb2ZmaWNlJTIwZGVzayUyMHN0ZWVsfGVufDB8fHx8MTc4MDkyMjMzOHww&ixlib=rb-4.1.0&q=85",
+    "hero_workshop": "https://images.unsplash.com/photo-1608126841548-dfad1d420a0f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHdvcmtzaG9wJTIwd2VsZGluZyUyMHNwYXJrc3xlbnwwfHx8fDE3ODA5MjIzMzh8MA&ixlib=rb-4.1.0&q=85",
+    "category_home": "https://images.unsplash.com/photo-1522156373667-4c7234bbd804?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBzdGVlbCUyMGhvbWUlMjBmdXJuaXR1cmV8ZW58MHx8fHwxNzgwOTIyMzM4fDA&ixlib=rb-4.1.0&q=85",
+    "texture_bg": "https://images.pexels.com/photos/6485438/pexels-photo-6485438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "components": {
+    "button_primary": "bg-[#0047FF] text-white hover:bg-[#0036CC] transition-colors rounded-sm px-6 py-3 font-medium flex items-center justify-center gap-2",
+    "button_secondary": "bg-transparent text-white border border-white/20 hover:bg-white/5 transition-colors rounded-sm px-6 py-3 font-medium",
+    "input_fields": "bg-[#14161A] border border-white/10 text-white focus:border-[#0047FF] focus:ring-1 focus:ring-[#0047FF] rounded-sm p-3 placeholder:text-slate-500",
+    "glass_header": "fixed top-0 w-full z-50 bg-[#0A0B0E]/80 backdrop-blur-xl border-b border-white/10"
+  },
+  "pages": {
+    "home": {
+      "sections": [
+        {
+          "name": "Header",
+          "description": "Sticky glassmorphism header. Logo on left (green R logo, scale down so green acts as an incidental accent). Links: Home, About Us, Products, Why Choose Us, Contact Us. CTA: 'Get a Free Quote' button.",
+          "data_testid": "header-section"
+        },
+        {
+          "name": "Hero",
+          "description": "Split-screen layout. Left: H1 'Precision-Engineered Steel Furniture for Home & Office'. High-contrast typography. Electric blue primary CTA 'Get a Quote', Secondary CTA 'View Products'. Right: An overlapping collage or split image of 'hero_office' and 'hero_workshop'. Subtle 'texture_bg' behind the whole section at 10% opacity.",
+          "data_testid": "hero-section"
+        },
+        {
+          "name": "Social Proof Banner",
+          "description": "A technical border-grid band directly under the hero. '4.9/5 Average Rating' with star icons. Badges: 'Premium Steel Grade', 'Custom Manufacturing', '10+ Years Expertise'.",
+          "data_testid": "trust-banner-section"
+        },
+        {
+          "name": "Product Categories",
+          "description": "Showcase of 'Office Furniture' (desks, racks, cupboards) and 'Home Furniture'. Two massive, imposing cards with dark overlays and high-contrast text on hover. Use 'hero_office' for Office and 'category_home' for Home.",
+          "data_testid": "categories-section"
+        },
+        {
+          "name": "Why Choose Us",
+          "description": "Bento Grid layout (Tetris style). Dark gray panels (#14161A) with 1px white/10 borders. Items: Custom Manufacturing, Industrial-Grade Steel, Flawless Finish, Reputed Expertise. Include simple Phosphor/Lucide icons in metallic silver.",
+          "data_testid": "why-choose-us-section"
+        },
+        {
+          "name": "Testimonials",
+          "description": "Simple clean carousel or 3-column grid of reviews. Use technical border styling. Highlight the robust quality of the furniture in the review text.",
+          "data_testid": "testimonials-section"
+        },
+        {
+          "name": "Contact & Quote Section",
+          "description": "Split layout. Left: Address, Phone, Email, WhatsApp CTA. Right: 'Get a Free Quote' Form (Name, Email, Phone, Product Interest, Message). Form submits to backend. Electric blue submit button.",
+          "data_testid": "contact-quote-section"
+        },
+        {
+          "name": "Footer",
+          "description": "Massive 'RINI' typography as a watermark/backdrop. standard links, copyright, minimalist industrial vibe.",
+          "data_testid": "footer-section"
+        }
+      ]
+    }
+  },
+  "real_content": {
+    "address": "RINI ENGINEERING WORKS, INDUSTRIAL DEVELOPMENT AREA, MUPPATHADOM, 683110",
+    "phone": "9605883001",
+    "email": "RINIENGINEERINGWORKS@GMAIL.COM"
+  },
+  "instructions_to_main_agent": [
+    "Strictly follow the color palette. Pure black is forbidden, use #0A0B0E and #14161A.",
+    "The green logo should be placed natively; do not try to filter its color. The contrast against the charcoal background will make it pop subtly without ruining the industrial theme.",
+    "Use Bricolage Grotesque for headings and Manrope for body text (import via Google Fonts).",
+    "Implement the 'Get a Free Quote' form to connect to a FastAPI backend endpoint that saves the lead.",
+    "Include a floating WhatsApp CTA fixed to the bottom right of the viewport.",
+    "Ensure ALL interactive elements and major sections have data-testid attributes per the guidelines.",
+    "Use Lucide-react for icons.",
+    "Apply 'Technical Look' borders (1px solid border-white/10) heavily on grids, panels, and sections to give a blueprint/engineering vibe."
+  ]
+}
