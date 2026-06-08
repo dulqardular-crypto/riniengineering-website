@@ -49,7 +49,7 @@ export default function Header({ onQuote }) {
             className="flex flex-col items-center group"
           >
             <div
-              className="flex items-center justify-center bg-black border border-white/10"
+              className="flex items-center justify-center"
               style={{
                 width: scrolled ? "56px" : "min(32rem, 70vw)",
                 height: scrolled ? "56px" : "min(32rem, 70vw)",
@@ -59,7 +59,7 @@ export default function Header({ onQuote }) {
               <img
                 src={BRAND.logo}
                 alt="Rini Engineering Works"
-                className="logo-blend w-[88%] h-[88%] object-contain"
+                className="logo-blend w-full h-full object-contain"
               />
             </div>
             <div
