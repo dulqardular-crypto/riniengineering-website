@@ -70,6 +70,12 @@ body {
     background-size: 64px 64px;
 }
 
+/* Logo white-background blending — for dark mode */
+.logo-blend {
+    filter: invert(1) hue-rotate(180deg) brightness(1.05) contrast(1.05);
+    mix-blend-mode: screen;
+}
+
 /* Selection */
 ::selection {
     background: var(--accent);
