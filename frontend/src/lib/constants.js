@@ -12,9 +12,9 @@ export const BRAND = {
 
 export const MEDIA = {
   heroOffice:
-    "https://images.unsplash.com/photo-1618211535056-e678b388af32?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwb2ZmaWNlJTIwZGVzayUyMHN0ZWVsfGVufDB8fHx8MTc4MDkyMjMzOHww&ixlib=rb-4.1.0&q=85",
+    "https://customer-assets.emergentagent.com/job_precision-metals-5/artifacts/diuujl1f_IMG_7315.PNG",
   heroWorkshop:
-    "https://images.unsplash.com/photo-1608126841548-dfad1d420a0f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHdvcmtzaG9wJTIwd2VsZGluZyUyMHNwYXJrc3xlbnwwfHx8fDE3ODA5MjIzMzh8MA&ixlib=rb-4.1.0&q=85",
+    "https://customer-assets.emergentagent.com/job_precision-metals-5/artifacts/07dpsxsl_IMG_7316.PNG",
   catHome:
     "https://images.unsplash.com/photo-1522156373667-4c7234bbd804?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBzdGVlbCUyMGhvbWUlMjBmdXJuaXR1cmV8ZW58MHx8fHwxNzgwOTIyMzM4fDA&ixlib=rb-4.1.0&q=85",
   texture:

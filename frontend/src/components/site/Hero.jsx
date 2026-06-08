@@ -103,25 +103,25 @@ export default function Hero({ onQuote }) {
           <div className="lg:col-span-5 fade-up" style={{ animationDelay: "0.15s" }}>
             <div className="relative h-[420px] sm:h-[540px] lg:h-[620px]">
               {/* main image (office) */}
-              <div className="absolute top-0 right-0 w-[80%] h-[60%] border border-white/10 overflow-hidden">
+              <div className="absolute top-0 right-0 w-[80%] h-[60%] border border-white/10 overflow-hidden bg-white">
                 <img
                   src={MEDIA.heroOffice}
-                  alt="Industrial steel office desk"
-                  className="w-full h-full object-cover"
+                  alt="Smart advertising bench"
+                  className="w-full h-full object-contain p-2"
                 />
-                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-                  <div className="overline text-white">Series 01 — Office</div>
+                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 via-black/60 to-transparent">
+                  <div className="overline text-white">Smart Bench · Series 01</div>
                 </div>
               </div>
               {/* secondary image (workshop) */}
-              <div className="absolute bottom-0 left-0 w-[70%] h-[55%] border border-white/10 overflow-hidden">
+              <div className="absolute bottom-0 left-0 w-[70%] h-[55%] border border-white/10 overflow-hidden bg-white">
                 <img
                   src={MEDIA.heroWorkshop}
-                  alt="Metal workshop manufacturing"
-                  className="w-full h-full object-cover"
+                  alt="Modular steel kiosk"
+                  className="w-full h-full object-contain p-2"
                 />
-                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-                  <div className="overline text-white">In-House Fabrication</div>
+                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 via-black/60 to-transparent">
+                  <div className="overline text-white">Modular Steel Kiosk</div>
                 </div>
               </div>
               {/* decorative tag */}
