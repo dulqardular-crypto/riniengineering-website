@@ -70,10 +70,9 @@ body {
     background-size: 64px 64px;
 }
 
-/* Logo white-background blending — for dark mode */
+/* Logo (white-bg removed offline; no blend filter needed) */
 .logo-blend {
-    filter: invert(1) hue-rotate(180deg) brightness(1.05) contrast(1.05);
-    mix-blend-mode: screen;
+    /* Kept as a no-op class for backwards compatibility */
 }
 
 /* Selection */

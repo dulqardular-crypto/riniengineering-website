@@ -2,7 +2,7 @@ export const BRAND = {
   name: "Rini Engineering Works",
   short: "RINI",
   tagline: "Precision Steel Engineering Since Day One",
-  logo: "https://customer-assets.emergentagent.com/job_precision-metals-5/artifacts/k2rb8pm1_image%20logo%20rini.PNG",
+  logo: "/brand/logo-rini.png",
   phone: "+91 9605883001",
   phoneRaw: "+919605883001",
   whatsapp: "919605883001",
