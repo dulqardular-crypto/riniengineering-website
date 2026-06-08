@@ -30,25 +30,25 @@ export default function Header({ onQuote }) {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-24 items-center justify-between">
           {/* Logo */}
           <a
             href="#home"
             data-testid="header-logo"
             className="flex items-center gap-3 group"
           >
-            <div className="h-11 w-11 flex items-center justify-center bg-white/[0.03] border border-white/10">
+            <div className="h-16 w-16 sm:h-[72px] sm:w-[72px] flex items-center justify-center bg-white/[0.03] border border-white/10">
               <img
                 src={BRAND.logo}
                 alt="Rini Engineering Works"
-                className="h-9 w-9 object-contain"
+                className="h-14 w-14 sm:h-16 sm:w-16 object-contain"
               />
             </div>
             <div className="hidden sm:flex flex-col leading-none">
-              <span className="font-display text-base font-bold tracking-tight text-white">
+              <span className="font-display text-lg font-bold tracking-tight text-white">
                 RINI
               </span>
-              <span className="text-[0.65rem] uppercase tracking-[0.22em] text-slate-400">
+              <span className="text-[0.65rem] uppercase tracking-[0.22em] text-slate-400 mt-1">
                 Engineering Works
               </span>
             </div>

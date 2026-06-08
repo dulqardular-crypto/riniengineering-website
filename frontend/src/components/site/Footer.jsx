@@ -11,19 +11,19 @@ export default function Footer() {
         <div className="grid lg:grid-cols-12 gap-12 mb-16">
           {/* Brand */}
           <div className="lg:col-span-5">
-            <div className="flex items-center gap-3 mb-5">
-              <div className="h-12 w-12 flex items-center justify-center bg-white/[0.03] border border-white/10">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="h-20 w-20 flex items-center justify-center bg-white/[0.03] border border-white/10">
                 <img
                   src={BRAND.logo}
                   alt="Rini Engineering Works"
-                  className="h-10 w-10 object-contain"
+                  className="h-16 w-16 object-contain"
                 />
               </div>
               <div>
-                <div className="font-display text-lg font-bold tracking-tight text-white">
+                <div className="font-display text-2xl font-bold tracking-tight text-white">
                   RINI
                 </div>
-                <div className="overline">Engineering Works</div>
+                <div className="overline mt-1">Engineering Works</div>
               </div>
             </div>
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm">
