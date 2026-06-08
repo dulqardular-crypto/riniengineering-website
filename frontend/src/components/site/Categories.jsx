@@ -1,24 +1,35 @@
-import { ArrowUpRight, Check } from "lucide-react";
-import { MEDIA, OFFICE_ITEMS, HOME_ITEMS } from "../../lib/constants";
+import { ArrowUpRight, Ruler } from "lucide-react";
 
-const CATEGORIES = [
+const PRODUCTS = [
   {
-    key: "office",
+    key: "locker-8-door",
     no: "01",
-    title: "Office Furniture",
-    blurb:
-      "Engineered for productivity. Robust desks, filing systems, and modular racks designed for enterprises that demand longevity.",
-    items: OFFICE_ITEMS,
-    image: MEDIA.heroOffice,
+    name: "8 Door Locker Almirah",
+    dimension: "6.5 ft × 3 ft × 1.5 ft",
+    description:
+      "Heavy-duty 8-compartment steel locker with individual key locks. Ideal for offices, schools, factories, and shared workspaces requiring secure personal storage.",
+    image:
+      "https://customer-assets.emergentagent.com/job_precision-metals-5/artifacts/qhfkj6np_IMG_7302.PNG",
   },
   {
-    key: "home",
+    key: "locker-6-door",
     no: "02",
-    title: "Home Furniture",
-    blurb:
-      "Contemporary metal craftsmanship for the modern home. Cupboards, wardrobes, and bespoke steel frames built to your space.",
-    items: HOME_ITEMS,
-    image: MEDIA.catHome,
+    name: "6 Door Locker Almirah",
+    dimension: "6.5 ft × 3 ft × 1.5 ft",
+    description:
+      "Spacious 6-compartment vertical locker system with separate locks per door. Engineered for hostels, gyms, staff rooms, and institutional storage.",
+    image:
+      "https://customer-assets.emergentagent.com/job_precision-metals-5/artifacts/45h3zt0g_IMG_7303.PNG",
+  },
+  {
+    key: "hostel-bunk-cot",
+    no: "03",
+    name: "Hostel Bunk Cot",
+    dimension: "6.25 ft × 2.5 ft × 5 ft",
+    description:
+      "Robust two-tier metal bunk bed with reinforced ladder and welded steel frame. Built for hostels, dormitories, and labour accommodations.",
+    image:
+      "https://customer-assets.emergentagent.com/job_precision-metals-5/artifacts/1e088wwk_IMG_7306.JPG.jpeg",
   },
 ];
 
@@ -33,89 +44,99 @@ export default function Categories({ onQuote }) {
         {/* Section header */}
         <div className="mb-14 md:mb-20 grid md:grid-cols-12 gap-8 items-end">
           <div className="md:col-span-7">
-            <div className="overline mb-5">— Our Collection</div>
+            <div className="overline mb-5">— Our Products</div>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tighter text-white leading-[1.02]">
-              Two divisions.
+              Manufactured
               <br />
-              <span className="text-slate-400">One standard of craftsmanship.</span>
+              <span className="text-slate-400">in our workshop.</span>
             </h2>
           </div>
           <div className="md:col-span-5 md:pl-8 md:border-l md:border-white/10">
             <p className="text-base text-slate-400 leading-relaxed">
-              Whether outfitting a corporate floor or finishing a private
-              residence, every piece is fabricated in our Muppathadom workshop
-              to the same uncompromising standard.
+              A selection of pieces we currently fabricate. Every unit is
+              custom-built to your specified dimensions, color, and finish.
+              Request a quote for bulk orders or modifications.
             </p>
           </div>
         </div>
 
-        {/* Category cards */}
-        <div className="grid lg:grid-cols-2 gap-px bg-white/10">
-          {CATEGORIES.map((cat) => (
+        {/* Product grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10">
+          {PRODUCTS.map((p) => (
             <article
-              key={cat.key}
-              data-testid={`category-card-${cat.key}`}
-              className="cat-card group relative bg-[#0A0B0E] overflow-hidden"
+              key={p.key}
+              data-testid={`product-card-${p.key}`}
+              className="cat-card group relative bg-[#0A0B0E] overflow-hidden flex flex-col"
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              {/* Image */}
+              <div className="relative aspect-[4/5] overflow-hidden bg-white">
                 <img
-                  src={cat.image}
-                  alt={cat.title}
-                  className="w-full h-full object-cover"
+                  src={p.image}
+                  alt={p.name}
+                  loading="lazy"
+                  className="w-full h-full object-contain p-6"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0B0E] via-[#0A0B0E]/40 to-transparent" />
-                <div className="absolute top-5 left-5 overline text-white/80">
-                  {cat.no} / 02
+                <div className="absolute top-4 left-4 overline text-slate-600">
+                  {p.no} / 03
                 </div>
-                <div className="absolute top-5 right-5">
-                  <span className="inline-flex items-center justify-center h-10 w-10 border border-white/30 bg-white/[0.05] backdrop-blur group-hover:bg-[#0047FF] group-hover:border-[#0047FF] transition-colors">
-                    <ArrowUpRight size={18} className="text-white" />
+                <div className="absolute top-4 right-4">
+                  <span className="inline-flex items-center justify-center h-9 w-9 border border-black/20 bg-white/80 backdrop-blur group-hover:bg-[#0047FF] group-hover:border-[#0047FF] transition-colors">
+                    <ArrowUpRight
+                      size={16}
+                      className="text-black group-hover:text-white transition-colors"
+                    />
                   </span>
                 </div>
               </div>
 
-              <div className="p-6 md:p-8">
-                <h3 className="font-display text-3xl md:text-4xl font-semibold tracking-tighter text-white">
-                  {cat.title}
+              {/* Body */}
+              <div className="p-6 md:p-7 flex-1 flex flex-col">
+                <h3 className="font-display text-2xl md:text-[1.7rem] font-semibold tracking-tight text-white leading-tight">
+                  {p.name}
                 </h3>
-                <p className="mt-3 text-sm md:text-base text-slate-400 leading-relaxed max-w-xl">
-                  {cat.blurb}
+                <div className="mt-3 inline-flex items-center gap-2 text-xs text-slate-400">
+                  <Ruler size={13} className="text-[#0047FF]" />
+                  <span className="font-medium tracking-wide">
+                    {p.dimension}
+                  </span>
+                </div>
+                <p className="mt-4 text-sm text-slate-400 leading-relaxed flex-1">
+                  {p.description}
                 </p>
 
-                <ul className="mt-6 grid sm:grid-cols-2 gap-y-2.5 gap-x-6">
-                  {cat.items.map((item) => (
-                    <li
-                      key={item}
-                      className="flex items-start gap-2.5 text-sm text-slate-300"
-                    >
-                      <Check
-                        size={14}
-                        className="text-[#0047FF] mt-1 shrink-0"
-                      />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="mt-8 flex flex-wrap items-center gap-3">
-                  <button
-                    data-testid={`category-quote-${cat.key}`}
-                    onClick={() => onQuote(cat.title)}
-                    className="btn-accent rounded-sm inline-flex items-center gap-2 px-5 py-3 text-sm font-semibold"
-                  >
-                    Request Quote
-                    <ArrowUpRight size={14} />
-                  </button>
-                  <a
-                    href="#contact"
-                    className="text-sm font-medium text-slate-300 hover:text-white border-b border-white/30 hover:border-white pb-0.5 transition-colors"
-                  >
-                    View Details
-                  </a>
-                </div>
+                <button
+                  data-testid={`product-quote-${p.key}`}
+                  onClick={() => onQuote(p.name)}
+                  className="mt-6 btn-accent rounded-sm inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-semibold w-full"
+                >
+                  Request Quote
+                  <ArrowUpRight size={14} />
+                </button>
               </div>
             </article>
           ))}
+        </div>
+
+        {/* Custom CTA bar */}
+        <div className="mt-px bg-[#14161A] border border-white/10 p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-5">
+          <div>
+            <div className="overline mb-2">Custom Orders</div>
+            <h4 className="font-display text-xl md:text-2xl font-semibold text-white tracking-tight">
+              Need something built to your exact spec?
+            </h4>
+            <p className="text-sm text-slate-400 mt-2 max-w-xl">
+              We manufacture steel furniture beyond this catalog — desks, racks,
+              cupboards, custom frames. Send us your requirement.
+            </p>
+          </div>
+          <button
+            data-testid="categories-custom-quote"
+            onClick={() => onQuote("Custom / Bulk Order")}
+            className="btn-accent rounded-sm inline-flex items-center gap-2 px-6 py-3.5 text-sm font-semibold shrink-0"
+          >
+            Get a Custom Quote
+            <ArrowUpRight size={14} />
+          </button>
         </div>
       </div>
     </section>
