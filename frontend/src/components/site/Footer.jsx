@@ -12,11 +12,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-5">
           <div className="flex items-center gap-4 mb-6">
-              <div className="logo-glow h-20 w-20 flex items-center justify-center">
+              <div className="h-20 w-20 flex items-center justify-center bg-black border border-white/10">
                 <img
                   src={BRAND.logo}
                   alt="Rini Engineering Works"
-                  className="logo-blend h-20 w-20 object-contain"
+                  className="logo-blend h-16 w-16 object-contain"
                 />
               </div>
               <div>
