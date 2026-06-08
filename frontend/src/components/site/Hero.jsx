@@ -6,7 +6,7 @@ export default function Hero({ onQuote }) {
     <section
       id="home"
       data-testid="hero-section"
-      className="relative pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden"
+      className="relative pt-[22rem] sm:pt-[24rem] md:pt-[22rem] pb-24 md:pb-32 overflow-hidden"
     >
       {/* Blueprint grid bg */}
       <div className="absolute inset-0 blueprint-grid opacity-60 pointer-events-none" />

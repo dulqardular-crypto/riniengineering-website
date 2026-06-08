@@ -25,37 +25,75 @@ export default function Header({ onQuote }) {
       data-testid="header-section"
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#0A0B0E]/85 backdrop-blur-xl border-b border-white/10"
+          ? "bg-[#0A0B0E]/90 backdrop-blur-xl border-b border-white/10"
           : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-24 items-center justify-between">
-          {/* Logo */}
+        {/* Centered logo bar */}
+        <div
+          className={`flex flex-col items-center transition-all duration-300 ${
+            scrolled ? "py-2" : "pt-5 pb-3"
+          }`}
+        >
           <a
             href="#home"
             data-testid="header-logo"
-            className="flex items-center gap-3 group"
+            className="flex flex-col items-center group"
           >
-            <div className="h-16 w-16 sm:h-[72px] sm:w-[72px] flex items-center justify-center bg-white/[0.03] border border-white/10">
+            <div
+              className={`flex items-center justify-center bg-white/[0.03] border border-white/10 transition-all duration-300 ${
+                scrolled
+                  ? "h-14 w-14 sm:h-16 sm:w-16"
+                  : "h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32"
+              }`}
+            >
               <img
                 src={BRAND.logo}
                 alt="Rini Engineering Works"
-                className="h-14 w-14 sm:h-16 sm:w-16 object-contain"
+                className={`object-contain transition-all duration-300 ${
+                  scrolled
+                    ? "h-12 w-12 sm:h-14 sm:w-14"
+                    : "h-20 w-20 sm:h-24 sm:w-24 md:h-28 md:w-28"
+                }`}
               />
             </div>
-            <div className="hidden sm:flex flex-col leading-none">
-              <span className="font-display text-lg font-bold tracking-tight text-white">
-                RINI
-              </span>
-              <span className="text-[0.65rem] uppercase tracking-[0.22em] text-slate-400 mt-1">
-                Engineering Works
-              </span>
-            </div>
+            {!scrolled && (
+              <div className="hidden sm:flex flex-col items-center leading-none mt-3">
+                <span className="font-display text-xl md:text-2xl font-bold tracking-tight text-white">
+                  RINI
+                </span>
+                <span className="text-[0.7rem] uppercase tracking-[0.32em] text-slate-400 mt-1.5">
+                  Engineering Works
+                </span>
+              </div>
+            )}
+          </a>
+        </div>
+
+        {/* Divider when expanded */}
+        {!scrolled && (
+          <div className="hidden lg:block border-t border-white/10 -mx-4 sm:-mx-6 lg:-mx-8" />
+        )}
+
+        {/* Nav row */}
+        <div
+          className={`flex items-center justify-between transition-all duration-300 ${
+            scrolled ? "h-12" : "h-16"
+          }`}
+        >
+          {/* Left CTA (call) */}
+          <a
+            href={`tel:${BRAND.phoneRaw}`}
+            data-testid="header-call"
+            className="hidden lg:inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] text-slate-400 hover:text-white transition-colors"
+          >
+            <span className="h-1.5 w-1.5 bg-[#0047FF]" />
+            Call · {BRAND.phone}
           </a>
 
-          {/* Desktop nav */}
-          <nav className="hidden lg:flex items-center gap-9">
+          {/* Center nav */}
+          <nav className="hidden lg:flex items-center gap-9 mx-auto">
             {NAV_LINKS.map((l) => (
               <a
                 key={l.href}
@@ -68,8 +106,8 @@ export default function Header({ onQuote }) {
             ))}
           </nav>
 
-          {/* CTA + mobile */}
-          <div className="flex items-center gap-3">
+          {/* Right CTA + mobile */}
+          <div className="flex items-center gap-3 ml-auto">
             <button
               data-testid="header-quote-btn"
               onClick={onQuote}
