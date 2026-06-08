@@ -45,7 +45,7 @@ export default function Header({ onQuote }) {
               className={`flex items-center justify-center bg-white/[0.03] border border-white/10 transition-all duration-300 ${
                 scrolled
                   ? "h-14 w-14 sm:h-16 sm:w-16"
-                  : "h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32"
+                  : "h-72 w-72 sm:h-[26rem] sm:w-[26rem] md:h-[32rem] md:w-[32rem]"
               }`}
             >
               <img
@@ -54,7 +54,7 @@ export default function Header({ onQuote }) {
                 className={`object-contain transition-all duration-300 ${
                   scrolled
                     ? "h-12 w-12 sm:h-14 sm:w-14"
-                    : "h-20 w-20 sm:h-24 sm:w-24 md:h-28 md:w-28"
+                    : "h-64 w-64 sm:h-[22rem] sm:w-[22rem] md:h-[28rem] md:w-[28rem]"
                 }`}
               />
             </div>
