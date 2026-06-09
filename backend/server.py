@@ -62,8 +62,8 @@ async def get_contact_info():
     return ContactInfo(
         company="Rini Engineering Works",
         address="Industrial Development Area, Muppathadom, 683110",
-        phone="+91 9605883001",
-        whatsapp="919605883001",
+        phone="+91 8136934100",
+        whatsapp="918136934100",
         email="riniengineeringworks@gmail.com",
     )
 

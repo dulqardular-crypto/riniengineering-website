@@ -3,9 +3,9 @@ export const BRAND = {
   short: "RINI",
   tagline: "Precision Steel Engineering Since Day One",
   logo: "https://customer-assets.emergentagent.com/job_precision-metals-5/artifacts/nr8zk2af_IMG_7308.PNG",
-  phone: "+91 9605883001",
-  phoneRaw: "+919605883001",
-  whatsapp: "919605883001",
+  phone: "+91 8136934100",
+  phoneRaw: "+918136934100",
+  whatsapp: "918136934100",
   email: "riniengineeringworks@gmail.com",
   address: "Industrial Development Area, Muppathadom, 683110",
 };
