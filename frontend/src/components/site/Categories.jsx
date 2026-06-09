@@ -9,7 +9,7 @@ const PRODUCTS = [
     description:
       "Heavy-duty 8-compartment steel locker with individual key locks. Ideal for offices, schools, factories, and shared workspaces requiring secure personal storage.",
     image:
-      "https://customer-assets.emergentagent.com/job_precision-metals-5/artifacts/qhfkj6np_IMG_7302.PNG",
+      "https://customer-assets.emergentagent.com/job_precision-metals-5/artifacts/ftlwc3vk_IMG_7301.PNG",
   },
   {
     key: "locker-6-door",
@@ -22,8 +22,18 @@ const PRODUCTS = [
       "https://customer-assets.emergentagent.com/job_precision-metals-5/artifacts/45h3zt0g_IMG_7303.PNG",
   },
   {
-    key: "hostel-bunk-cot",
+    key: "locker-24-door",
     no: "03",
+    name: "24 Door Locker Almirah",
+    dimension: "6.5 ft × 3 ft × 1.5 ft",
+    description:
+      "High-density 24-compartment industrial locker with individual key locks. Built for factories, large workforces, schools, and high-traffic personal storage demands.",
+    image:
+      "https://customer-assets.emergentagent.com/job_precision-metals-5/artifacts/04yf263q_IMG_7360.PNG",
+  },
+  {
+    key: "hostel-bunk-cot",
+    no: "04",
     name: "Hostel Bunk Cot",
     dimension: "6.25 ft × 2.5 ft × 5 ft",
     description:
@@ -61,7 +71,7 @@ export default function Categories({ onQuote }) {
         </div>
 
         {/* Product grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/10">
           {PRODUCTS.map((p) => (
             <article
               key={p.key}
@@ -77,7 +87,7 @@ export default function Categories({ onQuote }) {
                   className="w-full h-full object-contain p-6"
                 />
                 <div className="absolute top-4 left-4 overline text-slate-600">
-                  {p.no} / 03
+                  {p.no} / 04
                 </div>
                 <div className="absolute top-4 right-4">
                   <span className="inline-flex items-center justify-center h-9 w-9 border border-black/20 bg-white/80 backdrop-blur group-hover:bg-[#0047FF] group-hover:border-[#0047FF] transition-colors">
