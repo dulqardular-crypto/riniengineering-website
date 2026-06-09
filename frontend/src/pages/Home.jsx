@@ -7,6 +7,7 @@ import WhyChooseUs from "../components/site/WhyChooseUs";
 import Testimonials from "../components/site/Testimonials";
 import About from "../components/site/About";
 import ContactQuote from "../components/site/ContactQuote";
+import MapSection from "../components/site/MapSection";
 import Footer from "../components/site/Footer";
 import WhatsAppFAB from "../components/site/WhatsAppFAB";
 import QuoteDialog from "../components/site/QuoteDialog";
@@ -31,6 +32,7 @@ export default function Home() {
         <About />
         <Testimonials />
         <ContactQuote onOpenQuote={() => openQuote("Office Furniture")} />
+        <MapSection />
       </main>
       <Footer />
       <WhatsAppFAB />

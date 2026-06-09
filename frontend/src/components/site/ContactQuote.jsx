@@ -63,18 +63,31 @@ export default function ContactQuote() {
 
             <div className="mt-10 space-y-px bg-white/10">
               {/* Address */}
-              <div className="bg-[#0A0B0E] p-5 flex items-start gap-4" data-testid="contact-address">
+              <a
+                href={BRAND.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="contact-address"
+                className="bg-[#0A0B0E] p-5 flex items-start gap-4 hover:bg-[#14161A] transition-colors group"
+              >
                 <MapPin className="text-[#0047FF] shrink-0 mt-1" size={20} />
-                <div>
+                <div className="flex-1">
                   <div className="overline mb-1">Workshop & Office</div>
-                  <div className="text-white font-medium leading-snug">
+                  <div className="text-white font-medium leading-snug group-hover:text-[#0047FF] transition-colors">
                     Rini Engineering Works
                   </div>
                   <div className="text-sm text-slate-400 mt-1">
                     {BRAND.address}
                   </div>
+                  <div className="text-xs text-[#0047FF] mt-2 font-semibold uppercase tracking-wider">
+                    Get directions ↗
+                  </div>
                 </div>
-              </div>
+                <ArrowRight
+                  size={16}
+                  className="text-slate-500 group-hover:text-white group-hover:translate-x-1 transition-all"
+                />
+              </a>
 
               {/* Phone */}
               <a

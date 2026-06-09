@@ -8,6 +8,9 @@ export const BRAND = {
   whatsapp: "918136934100",
   email: "riniengineeringworks@gmail.com",
   address: "Industrial Development Area, Muppathadom, 683110",
+  mapsUrl: "https://maps.app.goo.gl/JN8X8MxA8rfrTVU88",
+  mapsEmbed:
+    "https://www.google.com/maps?q=Rini%20Engineering%20Works%2C%20Industrial%20Development%20Area%2C%20Muppathadom%2C%20683110&output=embed",
 };
 
 export const MEDIA = {
