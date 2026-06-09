@@ -15,7 +15,7 @@ export default function Reveal({
   delay = 0,
   y = 32,
   duration = 0.7,
-  once = true,
+  once = false,
   className = "",
   as = "div",
 }) {

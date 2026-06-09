@@ -113,7 +113,7 @@ export default function Categories({ onQuote }) {
           variants={headerVariants}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: false, margin: "-100px" }}
         >
           <motion.div variants={headerItem} className="md:col-span-7">
             <div className="overline mb-5">— Our Products</div>

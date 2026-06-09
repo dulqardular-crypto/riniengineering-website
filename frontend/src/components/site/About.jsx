@@ -32,7 +32,7 @@ export default function About() {
                   className="w-full h-[420px] md:h-[520px] object-contain p-4 bg-white"
                   initial={{ scale: 1.05 }}
                   whileInView={{ scale: 1 }}
-                  viewport={{ once: true, margin: "-80px" }}
+                  viewport={{ once: false, margin: "-80px" }}
                   transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
                 />
               </motion.div>
@@ -40,7 +40,7 @@ export default function About() {
                 className="absolute -bottom-8 -right-4 md:-right-12 w-48 md:w-60 border border-white/10 bg-[#0A0B0E]"
                 initial={{ opacity: 0, y: 24, rotate: -2 }}
                 whileInView={{ opacity: 1, y: 0, rotate: 0 }}
-                viewport={{ once: true, margin: "-80px" }}
+                viewport={{ once: false, margin: "-80px" }}
                 transition={{ duration: 0.8, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
               >
                 <div className="p-5">
