@@ -103,14 +103,14 @@ export default function Hero({ onQuote }) {
           <div className="lg:col-span-5 fade-up" style={{ animationDelay: "0.15s" }}>
             <div className="relative h-[420px] sm:h-[540px] lg:h-[620px]">
               {/* main image (office) */}
-              <div className="absolute top-0 right-0 w-[80%] h-[60%] border border-white/10 overflow-hidden bg-white">
+              <div className="absolute top-0 right-0 w-[80%] h-[60%] border border-white/10 overflow-hidden">
                 <img
                   src={MEDIA.heroOffice}
-                  alt="Smart advertising bench"
-                  className="w-full h-full object-contain p-2"
+                  alt="Rini Engineering Works workshop floor"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 via-black/60 to-transparent">
-                  <div className="overline text-white">Smart Bench · Series 01</div>
+                  <div className="overline text-white">Workshop Floor · Muppathadom</div>
                 </div>
               </div>
               {/* secondary image (workshop) */}

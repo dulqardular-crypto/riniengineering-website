@@ -12,7 +12,7 @@ export const BRAND = {
 
 export const MEDIA = {
   heroOffice:
-    "https://customer-assets.emergentagent.com/job_precision-metals-5/artifacts/diuujl1f_IMG_7315.PNG",
+    "https://customer-assets.emergentagent.com/job_precision-metals-5/artifacts/o3qeqpa0_WhatsApp%20Image%202026-06-09%20at%203.01.53%20PM.jpeg",
   heroWorkshop:
     "https://customer-assets.emergentagent.com/job_precision-metals-5/artifacts/07dpsxsl_IMG_7316.PNG",
   catHome:
