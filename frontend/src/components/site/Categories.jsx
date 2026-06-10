@@ -84,6 +84,46 @@ const PRODUCTS = [
     image:
       "https://customer-assets.emergentagent.com/job_precision-metals-5/artifacts/5zr0ejjs_image.png",
   },
+  {
+    key: "supermarket-billing-counter",
+    no: "09",
+    name: "Supermarket Billing Counter",
+    dimension: "Custom sizes available",
+    description:
+      "Retail-grade billing counter with stainless-steel top, lockable cash drawer, and open under-shelf for bags & supplies. Built for supermarkets, kiosks, and checkout stations.",
+    image:
+      "https://customer-assets.emergentagent.com/job_precision-metals-5/artifacts/6u1zi0s5_B64FF880-C71D-44C4-B86A-81BACFF0CE43.jpeg",
+  },
+  {
+    key: "bunk-cot-with-locker",
+    no: "10",
+    name: "Bunk Cot with Locker",
+    dimension: "Custom sizes available",
+    description:
+      "Single-tier hostel cot with integrated lockable storage boxes beneath. Combines sleeping space and secure personal storage — ideal for hostels and dormitories.",
+    image:
+      "https://customer-assets.emergentagent.com/job_precision-metals-5/artifacts/dttvrb68_Photoroom_20260611_002013.jpeg",
+  },
+  {
+    key: "industrial-trolley",
+    no: "11",
+    name: "Industrial Mesh Trolley",
+    dimension: "Custom sizes available",
+    description:
+      "Heavy-duty four-wheel mesh trolley with pneumatic tyres and welded steel frame. Built for warehouses, factories, and goods movement in industrial sites.",
+    image:
+      "https://customer-assets.emergentagent.com/job_precision-metals-5/artifacts/glz3wevn_Photoroom_20260611_002332.jpeg",
+  },
+  {
+    key: "school-bench-desk",
+    no: "12",
+    name: "School Bench & Desk Set",
+    dimension: "Custom sizes available",
+    description:
+      "Sturdy welded steel-frame bench and desk set with high-pressure laminate tops. Engineered for schools, dining halls, and training centres.",
+    image:
+      "https://customer-assets.emergentagent.com/job_precision-metals-5/artifacts/nfcqnzuz_Photoroom_20260611_002619.jpeg",
+  },
 ];
 
 const headerVariants = {
