@@ -38,30 +38,22 @@ export const PRODUCT_INTERESTS = [
 ];
 
 export const VALUE_PROPS = [
-  {
-    n: "01",
-    title: "Custom Manufacturing",
-    desc: "Tailored to exact dimensions, load capacity, and finish — built to your specification, not off-the-shelf.",
-    icon: "Ruler",
-  },
-  {
-    n: "02",
-    title: "Industrial-Grade Steel",
-    desc: "Premium cold-rolled steel selected for structural integrity. Engineered to outlast a generation of use.",
-    icon: "ShieldCheck",
-  },
-  {
-    n: "03",
-    title: "Flawless Finish",
-    desc: "Multi-stage powder coating with anti-corrosion primer. Smooth, scratch-resistant, and built for the long haul.",
-    icon: "Sparkles",
-  },
-  {
-    n: "04",
-    title: "Reputed Expertise",
-    desc: "Decades of trusted craftsmanship serving offices, factories, and homes across Kerala and beyond.",
-    icon: "Award",
-  },
+  { title: "25+ Years of Experience" },
+  { title: "Premium CR Steel Sheets" },
+  { title: "Strong & Durable Construction" },
+  { title: "Custom Manufacturing Available" },
+  { title: "Competitive Pricing" },
+  { title: "Fast Delivery Across Kerala" },
+  { title: "Trusted by Hundreds of Customers" },
+];
+
+export const PRODUCT_CHIPS = [
+  "Steel Cupboards",
+  "Steel Cots",
+  "Office Tables",
+  "Storage Racks",
+  "Lockers",
+  "Custom Furniture",
 ];
 
 export const TESTIMONIALS = [

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
-import { MEDIA } from "../../lib/constants";
+import { MEDIA, PRODUCT_CHIPS } from "../../lib/constants";
 import CountUp from "./CountUp";
 
 const containerVariants = {
@@ -23,7 +23,7 @@ const fadeUp = {
 };
 
 const STATS = [
-  { v: 20, l: "Years Crafting Steel", suffix: "+" },
+  { v: 25, l: "Years of Excellence", suffix: "+" },
   { v: 1000, l: "Projects Delivered", suffix: "+" },
   { v: 100, l: "Custom Built", suffix: "%" },
 ];
@@ -71,31 +71,45 @@ export default function Hero({ onQuote }) {
                 transition={{ duration: 2, repeat: Infinity }}
               />
               <span className="overline text-slate-300">
-                Manufactured in Muppathadom, Kerala
+                Manufacturing Steel Since 2000 · Ernakulam, Kerala
               </span>
             </motion.div>
 
             <motion.h1
               variants={fadeUp}
               data-testid="hero-heading"
-              className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-[5.5rem] font-bold leading-[0.95] tracking-tighter text-white"
+              className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-[5.25rem] font-bold leading-[0.96] tracking-tighter text-white"
             >
-              Precision-Engineered
+              Manufacturer of
               <br />
-              <span className="text-slate-400">Steel Furniture for</span>
+              <span className="text-slate-400">Premium Steel</span>
               <br />
-              Home <span className="text-[#0047FF]">&</span> Office.
+              Furniture <span className="text-[#0047FF]">Since 2000.</span>
             </motion.h1>
 
             <motion.p
               variants={fadeUp}
               data-testid="hero-subheading"
-              className="mt-8 max-w-xl text-base md:text-lg text-slate-400 leading-relaxed"
+              className="mt-7 max-w-xl text-base md:text-lg text-slate-300 leading-relaxed"
             >
-              Combining industrial-grade durability with elegant modern design.
-              Reputed manufacturers trusted by businesses and homeowners alike —
-              custom-built, powder-coated, and engineered to last a lifetime.
+              25+ years of excellence in steel furniture manufacturing — trusted
+              by homes, offices, institutions, and industries across Kerala.
             </motion.p>
+
+            <motion.div
+              variants={fadeUp}
+              className="mt-7 flex flex-wrap gap-2"
+              data-testid="hero-product-chips"
+            >
+              {PRODUCT_CHIPS.map((p) => (
+                <span
+                  key={p}
+                  className="text-xs uppercase tracking-[0.18em] font-semibold text-slate-300 border border-white/15 bg-white/[0.03] px-3 py-2 hover:border-[#0047FF] hover:text-white transition-colors"
+                >
+                  {p}
+                </span>
+              ))}
+            </motion.div>
 
             <motion.div
               variants={fadeUp}
@@ -151,13 +165,10 @@ export default function Hero({ onQuote }) {
             transition={{ duration: 1, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
           >
             <div className="relative h-[420px] sm:h-[540px] lg:h-[620px]">
-              {/* main image (office) */}
               <motion.div
                 className="absolute top-0 right-0 w-[80%] h-[60%] border border-white/10 overflow-hidden"
                 whileHover={{ y: -6, rotate: -0.4 }}
                 transition={{ type: "spring", stiffness: 200, damping: 18 }}
-                animate={{ y: [0, -6, 0] }}
-                style={{ animationDelay: "0.4s" }}
               >
                 <motion.img
                   src={MEDIA.heroOffice}
@@ -168,11 +179,10 @@ export default function Hero({ onQuote }) {
                   transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 via-black/60 to-transparent">
-                  <div className="overline text-white">Workshop Floor · Muppathadom</div>
+                  <div className="overline text-white">Workshop Floor · Ernakulam</div>
                 </div>
               </motion.div>
 
-              {/* secondary image (workshop) */}
               <motion.div
                 className="absolute bottom-0 left-0 w-[70%] h-[55%] border border-white/10 overflow-hidden bg-white"
                 whileHover={{ y: -6, rotate: 0.4 }}
@@ -191,7 +201,6 @@ export default function Hero({ onQuote }) {
                 </div>
               </motion.div>
 
-              {/* decorative floating tag */}
               <motion.div
                 className="absolute top-[58%] right-0 z-10 bg-[#0047FF] px-3 py-2 shadow-lg shadow-[#0047FF]/30"
                 animate={{ y: [0, -8, 0], rotate: [-1, 1, -1] }}

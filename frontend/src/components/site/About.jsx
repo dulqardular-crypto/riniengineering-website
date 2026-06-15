@@ -4,7 +4,7 @@ import Reveal from "./Reveal";
 import CountUp from "./CountUp";
 
 const STATS = [
-  { v: 20, suffix: "+", l: "Years in Steel Fabrication" },
+  { v: 25, suffix: "+", l: "Years of Experience" },
   { v: 1, suffix: "k+", l: "Custom Projects" },
   { v: 100, suffix: "%", l: "In-House Manufacturing" },
 ];
@@ -46,7 +46,7 @@ export default function About() {
                 <div className="p-5">
                   <div className="overline mb-1">Workshop</div>
                   <div className="font-display text-lg font-semibold text-white">
-                    Muppathadom
+                    Ernakulam
                   </div>
                   <div className="text-xs text-slate-400 mt-1">
                     Industrial Development Area, Kerala
@@ -61,24 +61,25 @@ export default function About() {
             <Reveal>
               <div className="overline mb-5">— About Rini Engineering Works</div>
               <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tighter text-white leading-[1.02]">
-                A workshop built
+                25 years of
                 <br />
-                <span className="text-slate-400">on precision.</span>
+                <span className="text-slate-400">trusted steelwork.</span>
               </h2>
             </Reveal>
             <Reveal delay={0.1}>
-              <p className="mt-7 text-base md:text-lg text-slate-400 leading-relaxed">
-                Founded with a singular ambition — to engineer steel furniture
-                that outlasts trends, generations, and abuse. From our fabrication
-                floor in Muppathadom, we cut, weld, finish, and assemble every
-                piece in-house. No outsourcing, no shortcuts.
+              <p className="mt-7 text-base md:text-lg text-slate-300 leading-relaxed">
+                Rini Engineering Works is a trusted steel furniture manufacturer
+                based in Ernakulam, Kerala, with over 25 years of experience. We
+                specialize in manufacturing high-quality steel cupboards, cots,
+                office furniture, lockers, storage racks, and customized steel
+                furniture solutions.
               </p>
             </Reveal>
             <Reveal delay={0.2}>
               <p className="mt-4 text-base text-slate-400 leading-relaxed">
-                The result is furniture that engineers, contractors, and
-                homeowners specify by name. Robust. Beautiful. Built once, built
-                right.
+                Our commitment to quality, durability, and customer satisfaction
+                has made us a preferred choice among homes, offices, educational
+                institutions, and industries across Kerala.
               </p>
             </Reveal>
 

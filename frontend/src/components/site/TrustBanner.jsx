@@ -1,9 +1,9 @@
 import { Star, Factory, Wrench, Award } from "lucide-react";
 
 const BADGES = [
-  { icon: Factory, label: "Premium Steel Grade" },
+  { icon: Factory, label: "Premium CR Steel" },
   { icon: Wrench, label: "Custom Manufacturing" },
-  { icon: Award, label: "20+ Years Expertise" },
+  { icon: Award, label: "25+ Years Expertise" },
   { icon: Star, label: "4.9 / 5 Customer Rating" },
 ];
 
